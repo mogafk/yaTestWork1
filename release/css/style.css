@@ -1,0 +1,262 @@
+.redbg{
+    background: red;
+}
+.bluebg{
+    background: blue;
+}
+.border{
+    border: 1px solid black;
+}
+.ohidden{
+    overflow: hidden;
+}
+
+.row{
+    z-index: 1;
+}
+.row:hover{
+    /*Горизонтальная подсветка*/
+    background: yellow;
+}
+.header .row div{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+[class*="col-"]{
+    /*background-color: blue;*/
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    /*height: 100%;*/
+
+    /*margin-bottom: -99999px;*/
+    /*padding-bottom: 99999px;*/
+}
+.testhover:hover:before{
+    /*Вертикальная подсветка*/
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: -1000px; left: 0px;
+    width: 100%;height: 2000px;
+    background: blue;
+    opacity: 0.3;
+    /**/
+    pointer-events: none;
+    z-index: 5;
+
+}
+.testhover:hover:after{
+    /*Горизонтальная подсветка*/
+    content:'';
+    color: red;
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    display: inline-block;
+    width: 2000%;
+    height: 100%;
+    opacity: 0.3;
+    /*background: blue;*/
+    /**/
+    pointer-events: none;
+    z-index: 1;
+}
+.full-h{
+    height: 100px;
+}
+.experemental{
+    widht: 300px;
+    position: relative;
+    top: -100px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+@-moz-keyframes slidein {
+    from {
+        left:-50%;
+    }
+    to {
+        left:30%;
+    }
+}
+@-webkit-keyframes slidein {
+    from {
+        left:-50%;
+    }
+    to {
+        left:30%;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 70%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup .close {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: orange;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+/*input[name="out"]:checked ~.container-fluid .row[class$="out"],*/
+/*input[name="out"]:checked ~.container-fluid .row[class$="out"],*/
+/*input[name="in"]:checked ~.row[class$="in"],*/
+/*input[name="out"]:checked ~.row[class$="out"]{*/
+input[name="in"]:checked ~.table .row[class$="in"],
+input[name="out"]:checked ~.table .row[class$="out"]{
+    visibility: visible;
+    display: block !important;
+}
+
+.plain{
+    width: 20px; height: 20px;
+}
+.rotate180{
+    transform: rotate(90deg);
+}
+.companyLogo{
+    height: 20px;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.logo-ceil{
+    padding-right: 0px;
+}
+.direction-ceil{
+    z-index: 1;
+}
+.point-destination-ceil{
+    white-space: nowrap;
+}
+.row a{
+    color: black;
+}
+.row-table{
+    /*height: 20px;*/
+    /*display: ;*/
+}
+
+.row-table:hover:before{
+    /*content: "zz";*/
+    /*background: red;*/
+    /*position: absolute;*/
+    /*height: 100%;*/
+}
+.header .row{
+    margin-right: 0px;
+    pointer-events: none;
+}
+.row div{
+    /*margin-right: 0px;*/
+}
+.table{
+    width: 100%;
+    height: 300px;
+    /*overflow-y: scroll;*/
+    overflow-x: hidden;
+    /*position: relative;*/
+    /*clear: both;*/
+}
+/*.row {*/
+    /*display: table;*/
+/*}*/
+/**/
+/*[class*="col-"] {*/
+    /*float: none;*/
+    /*display: table-cell;*/
+    /*vertical-align: top;*/
+    /*text-align: left;*/
+/*}*/
+@media (max-width: 328px){
+    .hidden-iphone45{
+        display: none !important;
+    }
+    .col-iphone45-12 {
+        width: 100%;
+    }
+    .col-iphone45-11 {
+        width: 91.66666667%;
+    }
+    .col-iphone45-10 {
+        width: 83.33333333%;
+    }
+    .col-iphone45-9 {
+        width: 75%;
+    }
+    .col-iphone45-8 {
+        width: 66.66666667%;
+    }
+    .col-iphone45-7 {
+        width: 58.33333333%;
+    }
+    .col-iphone45-6 {
+        width: 50%;
+    }
+    .col-iphone45-5 {
+        width: 41.66666667%;
+    }
+    .col-iphone45-4 {
+        width: 33.33333333%;
+    }
+    .col-iphone45-3 {
+        width: 25%;
+    }
+    .col-iphone45-2 {
+        width: 16.66666667%;
+    }
+    .col-iphone45-1 {
+        width: 8.33333333%;
+    }
+}
+@media (max-width: 500px) {
+    .table{
+        /*margin: 0px;*/
+        /*overflow-x: visible;*/
+        /*overflow-y: visible;*/
+    }
+    .visible-xss-block{
+        display: block;
+    }
+    .hidden-xss{
+        display: none !important;
+    }
+    .direction-ceil{
+        /*padding-left: 0px;*/
+    }
+    .ohidden{
+        overflow: visible;
+    }
+}

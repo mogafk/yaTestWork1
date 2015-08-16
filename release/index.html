@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>yandex first task</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1" maximum-scale="1" user-scalable="no">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <link rel="stylesheet" href="../vendor/bootstrap-recompile/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <p>
+      Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет
+      Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет
+      Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет
+      Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет
+      Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет
+      Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет Я некоторый текст привет привет
+    </p>
+    <!--.container-fluid-->
+    <div class="container-fluid ohidden readbg table">
+      <input type="checkbox" checked name="in">
+      <label>прилет</label>
+      <input type="checkbox" checked name="out">
+      <label>вылет</label>
+      <!--шапка-->
+      <div class="header">
+        <div class="row">
+          <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">Тип и номер</div>
+          <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2">Кампания</div>
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-i|phone45">Судно</div>
+          <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">Назначение</div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Время</div>
+          <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">Статус</div>
+          <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">Примечание</div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="row invisible hide row-table out"><a href="#popup0">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ДР1485</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">у внуково вобще такого поля вроде нет</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup1">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">TK421</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">поэтому я не знаю, что должно быть в примечаниях</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup2">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">OS7071</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Донавия</span><img src="../static/image/donavia-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uga-glads</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Увы, я никогда не летал</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup3">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">UN324</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Трансаэро</span><img src="../static/image/transaero-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">мне явно не хватает креативности</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup4">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">ДР148</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ГазпромАвиа</span><img src="../static/image/gazpromAvia.gif" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Штраф за превышение скорости</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup5">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ480</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Победа</span><img src="../static/image/pobeda-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">У пилота инфаркт</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup6">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ250</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Долго не могли поймать мышь</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup7">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ДР1485</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">у внуково вобще такого поля вроде нет</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup8">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">TK421</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">поэтому я не знаю, что должно быть в примечаниях</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup9">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">OS7071</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Донавия</span><img src="../static/image/donavia-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uga-glads</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Увы, я никогда не летал</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup10">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">UN324</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Трансаэро</span><img src="../static/image/transaero-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">мне явно не хватает креативности</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup11">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">ДР148</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ГазпромАвиа</span><img src="../static/image/gazpromAvia.gif" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Штраф за превышение скорости</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup12">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ480</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Победа</span><img src="../static/image/pobeda-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">У пилота инфаркт</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup13">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ250</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Долго не могли поймать мышь</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup14">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ДР1485</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">у внуково вобще такого поля вроде нет</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup15">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">TK421</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">поэтому я не знаю, что должно быть в примечаниях</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup16">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">OS7071</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Донавия</span><img src="../static/image/donavia-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uga-glads</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Увы, я никогда не летал</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup17">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">UN324</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Трансаэро</span><img src="../static/image/transaero-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">мне явно не хватает креативности</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup18">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">ДР148</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ГазпромАвиа</span><img src="../static/image/gazpromAvia.gif" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Штраф за превышение скорости</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup19">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ480</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Победа</span><img src="../static/image/pobeda-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">У пилота инфаркт</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup20">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ250</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Долго не могли поймать мышь</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup21">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ДР1485</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">у внуково вобще такого поля вроде нет</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup22">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">TK421</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">поэтому я не знаю, что должно быть в примечаниях</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup23">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">OS7071</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Донавия</span><img src="../static/image/donavia-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uga-glads</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Увы, я никогда не летал</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup24">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">UN324</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Трансаэро</span><img src="../static/image/transaero-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">мне явно не хватает креативности</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup25">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">ДР148</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ГазпромАвиа</span><img src="../static/image/gazpromAvia.gif" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Штраф за превышение скорости</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup26">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ480</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Победа</span><img src="../static/image/pobeda-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">У пилота инфаркт</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup27">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ250</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Долго не могли поймать мышь</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup28">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ДР1485</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">у внуково вобще такого поля вроде нет</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup29">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">TK421</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">поэтому я не знаю, что должно быть в примечаниях</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup30">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">OS7071</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Донавия</span><img src="../static/image/donavia-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uga-glads</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Увы, я никогда не летал</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup31">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">UN324</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Трансаэро</span><img src="../static/image/transaero-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">мне явно не хватает креативности</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup32">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">ДР148</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ГазпромАвиа</span><img src="../static/image/gazpromAvia.gif" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Штраф за превышение скорости</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup33">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ480</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Победа</span><img src="../static/image/pobeda-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">У пилота инфаркт</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup34">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ250</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Долго не могли поймать мышь</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup35">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ДР1485</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">у внуково вобще такого поля вроде нет</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup36">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">TK421</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">поэтому я не знаю, что должно быть в примечаниях</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup37">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">OS7071</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Донавия</span><img src="../static/image/donavia-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uga-glads</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Увы, я никогда не летал</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup38">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">UN324</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Трансаэро</span><img src="../static/image/transaero-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">мне явно не хватает креативности</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup39">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">ДР148</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ГазпромАвиа</span><img src="../static/image/gazpromAvia.gif" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Штраф за превышение скорости</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup40">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ480</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Победа</span><img src="../static/image/pobeda-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">У пилота инфаркт</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup41">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ250</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Долго не могли поймать мышь</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup42">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ДР1485</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">у внуково вобще такого поля вроде нет</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup43">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">TK421</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">поэтому я не знаю, что должно быть в примечаниях</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup44">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">OS7071</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Донавия</span><img src="../static/image/donavia-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uga-glads</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Увы, я никогда не летал</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup45">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">UN324</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Трансаэро</span><img src="../static/image/transaero-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">мне явно не хватает креативности</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup46">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">ДР148</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ГазпромАвиа</span><img src="../static/image/gazpromAvia.gif" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Штраф за превышение скорости</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup47">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ480</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Победа</span><img src="../static/image/pobeda-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">У пилота инфаркт</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup48">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ250</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Долго не могли поймать мышь</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup49">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ДР1485</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">у внуково вобще такого поля вроде нет</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup50">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">TK421</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">поэтому я не знаю, что должно быть в примечаниях</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup51">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">OS7071</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Донавия</span><img src="../static/image/donavia-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Uga-glads</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Увы, я никогда не летал</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup52">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">UN324</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Трансаэро</span><img src="../static/image/transaero-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:01</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">мне явно не хватает креативности</div></a></div>
+        <div class="row invisible hide row-table in"><a href="#popup53">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain rotate180"><span class="visible-xss-block">ДР148</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ГазпромАвиа</span><img src="../static/image/gazpromAvia.gif" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - прилет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Штраф за превышение скорости</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup54">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ480</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">Победа</span><img src="../static/image/pobeda-lg.png" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">У пилота инфаркт</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup55">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ250</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Долго не могли поймать мышь</div></a></div>
+        <div class="row invisible hide row-table out"><a href="#popup56">
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 direction-ceil"><img src="../static/image/prilet.png" class="plain"><span class="visible-xss-block">ЮТ500</span></div>
+            <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2 logo-ceil testhover nowrap"><span class="visible-lg-inline">ЮТэйр</span><img src="../static/image/utair-lg.jpg" class="companyLogo pull-right"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 hidden-ipho|ne45 testhover"><span class="hidden-sm hidden-xs">Airbus B777</span><span class="visible-sm-inline-block visible-xs-inline-block">B777</span></div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 testhover point-destination-ceil">Ugaganda</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 testhover"><span>12:00</span><span class="hidden-xss"> - вылет</span></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs testhover">Прилетел в 17:10. Закончена выд. багажа на А11</div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs testhover">Пьяный пассажир</div></a></div>
+      </div>
+    </div>
+    <div id="popup0" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР1485 | ЮТэйр} | Airbus B777 | Uganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | у внуково вобще такого поля вроде нет</div>
+      </div>
+    </div>
+    <div id="popup1" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> TK421 | ЮТэйр} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | поэтому я не знаю, что должно быть в примечаниях</div>
+      </div>
+    </div>
+    <div id="popup2" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> OS7071 | Донавия} | Airbus B777 | Uga-glads | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | Увы, я никогда не летал</div>
+      </div>
+    </div>
+    <div id="popup3" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> UN324 | Трансаэро} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | мне явно не хватает креативности</div>
+      </div>
+    </div>
+    <div id="popup4" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР148 | ГазпромАвиа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Штраф за превышение скорости</div>
+      </div>
+    </div>
+    <div id="popup5" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ480 | Победа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | У пилота инфаркт</div>
+      </div>
+    </div>
+    <div id="popup6" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ250 | ЮТэйр} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Долго не могли поймать мышь</div>
+      </div>
+    </div>
+    <div id="popup7" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР1485 | ЮТэйр} | Airbus B777 | Uganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | у внуково вобще такого поля вроде нет</div>
+      </div>
+    </div>
+    <div id="popup8" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> TK421 | ЮТэйр} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | поэтому я не знаю, что должно быть в примечаниях</div>
+      </div>
+    </div>
+    <div id="popup9" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> OS7071 | Донавия} | Airbus B777 | Uga-glads | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | Увы, я никогда не летал</div>
+      </div>
+    </div>
+    <div id="popup10" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> UN324 | Трансаэро} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | мне явно не хватает креативности</div>
+      </div>
+    </div>
+    <div id="popup11" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР148 | ГазпромАвиа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Штраф за превышение скорости</div>
+      </div>
+    </div>
+    <div id="popup12" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ480 | Победа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | У пилота инфаркт</div>
+      </div>
+    </div>
+    <div id="popup13" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ250 | ЮТэйр} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Долго не могли поймать мышь</div>
+      </div>
+    </div>
+    <div id="popup14" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР1485 | ЮТэйр} | Airbus B777 | Uganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | у внуково вобще такого поля вроде нет</div>
+      </div>
+    </div>
+    <div id="popup15" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> TK421 | ЮТэйр} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | поэтому я не знаю, что должно быть в примечаниях</div>
+      </div>
+    </div>
+    <div id="popup16" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> OS7071 | Донавия} | Airbus B777 | Uga-glads | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | Увы, я никогда не летал</div>
+      </div>
+    </div>
+    <div id="popup17" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> UN324 | Трансаэро} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | мне явно не хватает креативности</div>
+      </div>
+    </div>
+    <div id="popup18" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР148 | ГазпромАвиа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Штраф за превышение скорости</div>
+      </div>
+    </div>
+    <div id="popup19" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ480 | Победа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | У пилота инфаркт</div>
+      </div>
+    </div>
+    <div id="popup20" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ250 | ЮТэйр} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Долго не могли поймать мышь</div>
+      </div>
+    </div>
+    <div id="popup21" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР1485 | ЮТэйр} | Airbus B777 | Uganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | у внуково вобще такого поля вроде нет</div>
+      </div>
+    </div>
+    <div id="popup22" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> TK421 | ЮТэйр} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | поэтому я не знаю, что должно быть в примечаниях</div>
+      </div>
+    </div>
+    <div id="popup23" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> OS7071 | Донавия} | Airbus B777 | Uga-glads | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | Увы, я никогда не летал</div>
+      </div>
+    </div>
+    <div id="popup24" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> UN324 | Трансаэро} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | мне явно не хватает креативности</div>
+      </div>
+    </div>
+    <div id="popup25" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР148 | ГазпромАвиа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Штраф за превышение скорости</div>
+      </div>
+    </div>
+    <div id="popup26" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ480 | Победа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | У пилота инфаркт</div>
+      </div>
+    </div>
+    <div id="popup27" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ250 | ЮТэйр} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Долго не могли поймать мышь</div>
+      </div>
+    </div>
+    <div id="popup28" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР1485 | ЮТэйр} | Airbus B777 | Uganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | у внуково вобще такого поля вроде нет</div>
+      </div>
+    </div>
+    <div id="popup29" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> TK421 | ЮТэйр} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | поэтому я не знаю, что должно быть в примечаниях</div>
+      </div>
+    </div>
+    <div id="popup30" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> OS7071 | Донавия} | Airbus B777 | Uga-glads | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | Увы, я никогда не летал</div>
+      </div>
+    </div>
+    <div id="popup31" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> UN324 | Трансаэро} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | мне явно не хватает креативности</div>
+      </div>
+    </div>
+    <div id="popup32" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР148 | ГазпромАвиа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Штраф за превышение скорости</div>
+      </div>
+    </div>
+    <div id="popup33" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ480 | Победа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | У пилота инфаркт</div>
+      </div>
+    </div>
+    <div id="popup34" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ250 | ЮТэйр} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Долго не могли поймать мышь</div>
+      </div>
+    </div>
+    <div id="popup35" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР1485 | ЮТэйр} | Airbus B777 | Uganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | у внуково вобще такого поля вроде нет</div>
+      </div>
+    </div>
+    <div id="popup36" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> TK421 | ЮТэйр} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | поэтому я не знаю, что должно быть в примечаниях</div>
+      </div>
+    </div>
+    <div id="popup37" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> OS7071 | Донавия} | Airbus B777 | Uga-glads | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | Увы, я никогда не летал</div>
+      </div>
+    </div>
+    <div id="popup38" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> UN324 | Трансаэро} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | мне явно не хватает креативности</div>
+      </div>
+    </div>
+    <div id="popup39" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР148 | ГазпромАвиа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Штраф за превышение скорости</div>
+      </div>
+    </div>
+    <div id="popup40" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ480 | Победа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | У пилота инфаркт</div>
+      </div>
+    </div>
+    <div id="popup41" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ250 | ЮТэйр} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Долго не могли поймать мышь</div>
+      </div>
+    </div>
+    <div id="popup42" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР1485 | ЮТэйр} | Airbus B777 | Uganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | у внуково вобще такого поля вроде нет</div>
+      </div>
+    </div>
+    <div id="popup43" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> TK421 | ЮТэйр} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | поэтому я не знаю, что должно быть в примечаниях</div>
+      </div>
+    </div>
+    <div id="popup44" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> OS7071 | Донавия} | Airbus B777 | Uga-glads | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | Увы, я никогда не летал</div>
+      </div>
+    </div>
+    <div id="popup45" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> UN324 | Трансаэро} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | мне явно не хватает креативности</div>
+      </div>
+    </div>
+    <div id="popup46" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР148 | ГазпромАвиа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Штраф за превышение скорости</div>
+      </div>
+    </div>
+    <div id="popup47" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ480 | Победа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | У пилота инфаркт</div>
+      </div>
+    </div>
+    <div id="popup48" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ250 | ЮТэйр} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Долго не могли поймать мышь</div>
+      </div>
+    </div>
+    <div id="popup49" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР1485 | ЮТэйр} | Airbus B777 | Uganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | у внуково вобще такого поля вроде нет</div>
+      </div>
+    </div>
+    <div id="popup50" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> TK421 | ЮТэйр} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | поэтому я не знаю, что должно быть в примечаниях</div>
+      </div>
+    </div>
+    <div id="popup51" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> OS7071 | Донавия} | Airbus B777 | Uga-glads | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | Увы, я никогда не летал</div>
+      </div>
+    </div>
+    <div id="popup52" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> UN324 | Трансаэро} | Airbus B777 | Ugaganda | 12:01 | Прилетел в 17:10. Закончена выд. багажа на А11 | мне явно не хватает креативности</div>
+      </div>
+    </div>
+    <div id="popup53" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ДР148 | ГазпромАвиа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Штраф за превышение скорости</div>
+      </div>
+    </div>
+    <div id="popup54" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ480 | Победа} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | У пилота инфаркт</div>
+      </div>
+    </div>
+    <div id="popup55" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ250 | ЮТэйр} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Долго не могли поймать мышь</div>
+      </div>
+    </div>
+    <div id="popup56" class="overlay">
+      <div class="popup"><a href="#" class="close">×</a>
+        <div class="content"> ЮТ500 | ЮТэйр} | Airbus B777 | Ugaganda | 12:00 | Прилетел в 17:10. Закончена выд. багажа на А11 | Пьяный пассажир</div>
+      </div>
+    </div>
+    <p class="hello">"hello World"</p>
+    <!--переделать in out из классов в data-->
+  </body>
+</html>

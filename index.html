@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title>Тестовое задание 1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="vendor/bootstrap-recompile/css/bootstrap.min.css"/>
+    <style>
+        .redbg{
+            background: red;
+        }
+        .bluebg{
+            background: blue;
+        }
+        .border{
+            border: 1px solid black;
+        }
+        .ohidden{
+            overflow: hidden;
+        }
+        .testhover:hover:before{
+            /*Вертикальная подсветка*/
+            content: '';
+            position: absolute;
+            display: inline-block;
+            top: -1000px; left: 0px;
+            width: 100%;height: 2000px;
+            background: blue;
+            opacity: 0.3;
+/**/
+            pointer-events: none;
+            z-index: 1;
+        }
+        .testhover:hover:after{
+            content:'';
+            color: red;
+            position: absolute;
+            left: -1000%;
+            display: inline-block;
+            width: 2000%;
+            height: 20px;
+            opacity: 0.3;
+            background: blue;
+/**/
+            pointer-events: none;
+            z-index: 1;
+        }
+        .full-h{
+            height: 100px;
+        }
+        .experemental{
+            widht: 300px;
+            position: relative;
+            top: -100px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        @-moz-keyframes slidein {
+            from {
+                left:-50%;
+            }
+            to {
+                left:30%;
+            }
+        }
+        @-webkit-keyframes slidein {
+            from {
+                left:-50%;
+            }
+            to {
+                left:30%;
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+        .popup {
+            margin: 70px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            width: 70%;
+            position: relative;
+            transition: all 5s ease-in-out;
+        }
+        /*.popup h2 {*/
+            /*margin-top: 0;*/
+            /*color: #333;*/
+            /*font-family: Tahoma, Arial, sans-serif;*/
+        /*}*/
+        .popup .close {
+            position: absolute;
+            top: 0px;
+            right: 5px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+        .popup .close:hover {
+            color: orange;
+        }
+        .popup .content {
+            max-height: 30%;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<!--Тестовые буквы на-->
+<div class="container-fluid ohidden">
+    <!--<div class="row">-->
+        <!--<div class="col-xs-4 redbg border">.col-md-4</div>-->
+        <!--<div class="col-xs-4 redbg border">.col-md-4</div>-->
+        <!--<div class="col-xs-4 redbg border">.col-md-4</div>-->
+    <!--</div>-->
+
+
+    <div class="row">
+        <div class="col-xs-12 col-md-8 redbg border testhover">.col-xs-12 .col-md-8</div>
+        <div class="col-md-4 hidden-sm redbg testhover">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-8 redbg border testhover">.col-xs-12 .col-md-8</div>
+        <div class="col-md-4 hidden-sm redbg testhover">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row">
+        <a href="#popup">
+            <div class="col-xs-12 col-md-8 redbg testhover">.col-xs-12 .col-md-8</div>
+            <div class="col-md-4 hidden-sm redbg testhover">.col-xs-6 .col-md-4</div>
+        </a>
+    </div>
+</div>
+<!--<a href="#testdiv">test</a>-->
+<div id="popup" class="overlay">
+    <div class="popup">
+        <!--<h2>Here i am</h2>-->
+        <a class="close" href="#">×</a>
+        <div class="content">
+            Вылет | Борт такойто |  кампания такая | Отлет в 1212 | примечание | прилет | аеропорт | примечание
+        </div>
+    </div>
+</div>
+<script src="../yandexTask1"></script>
+<div id="testdiv">
+    some text here
+</div>
+</body>
+</html>
